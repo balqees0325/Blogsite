@@ -1,0 +1,376 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 18px;
+  color: #333;
+  background-color: #f6f6f6;
+  line-height: 1.6;
+  letter-spacing: 1.5;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+  object-fit: contain;
+}
+main {
+  display: grid;
+  grid-template-columns: 20% 70%; 
+  gap: 2.5rem;
+  margin: 2rem;
+}
+/* styling for aside */
+aside {
+  
+  background-color: #1fb157;
+}
+aside .nav {
+  height: 100vh;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+  margin: 2rem;
+}
+aside .nav h1 a {
+  font-family: "Patua One", cursive;
+  margin-top: 0.5em;
+  font-size: 2rem;
+  color: #fff;
+}
+nav img {
+  width: 8rem;
+  border-radius: 50%;
+  padding: 5%;
+}
+aside .nav p {
+  color: #eee;
+}
+aside .nav p > a {
+  text-decoration: underline;
+  color: #eee;
+  cursor: pointer;
+}
+aside .nav p > a:hover {
+  color: #04461d;
+}
+aside .nav ul.social {
+  display: flex;
+  justify-content: center;
+}
+aside nav ul.social li {
+  padding: 1.2rem 0.8rem;
+}
+aside nav ul.social li a {
+  color: #eee;
+  font-size: 2rem;
+}
+aside nav ul.social li a:hover .fa-twitter {
+  color: dodgerblue;
+}
+aside nav ul.social li a:hover .fa-linkedin-in {
+  color: rgb(6, 6, 95);
+}
+aside nav ul.social li a:hover .fa-medium {
+  color: rgba(0, 0, 0, 0.9);
+}
+aside nav ul.social li a:hover .fa-facebook {
+  color: rgb(2, 2, 170);
+}
+
+aside .navbar-nav {
+  margin: 2rem 0.8rem;
+}
+aside .navbar-nav .nav-item {
+  padding: 0.8rem;
+}
+aside .navbar-nav .nav-item a {
+  color: #eee;
+  font-size: 1.2rem;
+}
+aside .navbar-nav .nav-item a:hover {
+  color: #004119;
+}
+aside div.my-2 a {
+  color: #eee;
+  border: 1px solid #ccc;
+  background-color: transparent;
+  padding: 0.9rem 1.5rem;
+  border-radius: 4px;
+  font-size: 1.2rem;
+}
+aside div.my-2 a:hover {
+  background-color: #035a25;
+  border: none;
+}
+/* menu bar */
+.menu-toggle {
+  display: none;
+  color: #fff;
+  font-size: 2rem;
+}
+/* end of aside styling */
+/* main section style */
+section, .article {
+  background-color: #eee;
+  margin-left: 3rem;
+  line-height: 1.6;
+  letter-spacing: 1.5;
+  word-spacing: 2;
+}
+.article {
+  padding: 40px;
+}
+.article div:not(:first-child){
+  padding: 20px 0px;
+}
+.article div:not(:last-child){
+  padding: 40px 0px;
+}
+header,.footer-form {
+  text-align: center;
+  background-color: rgb(236, 231, 231);
+  padding: 1rem;
+}
+header h2, .footer-form h2 {
+  color: #000;
+  font-size: 2.3rem;
+  text-transform: capitalize;
+}
+header h2:hover, .footer-form h2:hover {
+  text-decoration: underline;
+  color: #444;
+}
+header div.intro, .footer-form div.intro{
+  font-size: 1rem;
+}
+form {
+  margin: 2rem 1rem;
+}
+header input,
+header button, .footer-form input, .footer-form button {
+  padding: 0.8rem 12px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+header input:focus,
+header button:focus, .footer-form input:focus, .footer-form button:focus{
+  outline: none;
+}
+header input, .footer-form input {
+  width: 300px;
+}
+header button, .footer-form button {
+  background-color: #1fb157;
+  border: none;
+  color: #eee;
+  font-size: 1rem;
+}
+/* end of header sttyling */
+/* main content */
+.card img {
+  width: 12rem;
+}
+.card {
+  display: flex;
+  margin: 1rem;
+  padding: 1.5rem;
+}
+.card-text {
+  padding-left: 20px;
+  line-height: 1.6;
+}
+.card-text a {
+  color: #222;
+}
+.card-text a:hover {
+  text-decoration: underline;
+  color: #444;
+}
+.card-text a h3 small,
+.card-text h3 a small {
+  color: #555;
+  font-size: 14px;
+}
+.card-text p a {
+  color: #1fb157;
+  padding-left: 4px;
+}
+.blog-nav {
+  display: block;
+  /* margin: 1rem; */
+  /*margin-left: 0;
+  padding-left: 12px; */
+  width: 100%;
+  position: relative;
+}
+.blog-nav a:last-child {
+  position: relative;
+  left: 30px;
+  bottom: 20px;
+}
+.blog-nav a:first-child {
+  display: none;
+}
+ .fa-long-arrow-alt-right {
+   position: absolute;
+   top: 50px;
+   right:0px;
+   border: 1px solid red;
+ }
+.blog-nav a {
+  display: block;
+  background: #1fb157;
+  color: #fff;
+  width: 90%;
+   padding: 1rem;
+  font-size: 1.5rem;
+  text-align: center;
+}
+.fa-long-arrow-alt-left {
+display: none;
+}
+/* .blog-nav {
+  margin: 3rem;
+ max-width: 500px;
+  padding-left: 12px;
+  width: 100%;
+  position: relative;
+}
+.blog-nav a {
+  /* width: 40%; */
+  /* background: #1fb157;
+  color: #fff;
+  padding: 1rem 13rem;
+  font-size: 1.5rem;
+} */
+.blog-nav a:hover {
+  background-color: #07913c;
+}
+.fa-long-arrow-alt-left {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+}
+.fa-long-arrow-alt-right {
+  position: absolute;
+  top: 10px;
+  right: 75px;
+} */
+.footer {
+  display:flex;
+  text-align: center;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  background-color: #1fb157;
+  padding: 1.5rem;
+}
+
+.footer small,
+.footer a {
+  color: #eee;
+}
+
+@media (max-width: 780px), (max-width: 420px) {
+  main {
+    display: block;
+  
+  }
+  .menu-toggle {
+    display: block;
+    justify-content: flex-start;
+  }
+  .hamburger h2 {
+    color: #fff;
+  }
+  aside {
+    display: block;
+    width: 100%;
+    height: 100vh;
+  }
+  
+  section, .article {
+    display: block;
+    grid-column: 100%;
+    width: 100%;
+    font-size: 1.5rem;
+    margin: 2.5em 0  0 0;
+  }
+  header{
+    display: block; 
+  }
+  header div.intro {
+    font-size: 1.5rem;
+  }
+  .form-group input {
+    width: 90%; 
+  }
+  .email-sub .email {
+    width: 90%;
+    margin-bottom: 1em;
+  }
+  .form-group button {
+    width: 90%;
+    margin-top: .8rem;
+  }
+  .main{
+    display: block;
+    width: 100%;
+    padding: 0px 1em;
+  }
+   article, .article {
+    width: 100%; 
+  }
+  .card img {
+    display: none;
+  }
+  .blog-nav {
+    display: block;
+    /* margin: 1rem; */
+    /*margin-left: 0;
+    padding-left: 12px; */
+    width: 100%;
+    position: relative;
+  }
+  .blog-nav a:last-child {
+    position: relative;
+    left: 30px;
+    bottom: 20px;
+  }
+  .blog-nav a:first-child {
+    display: none;
+  }
+   .fa-long-arrow-alt-right {
+     position: absolute;
+     top: 25px;
+     right:15px;
+   }
+  .blog-nav a {
+    display: block;
+    background: #1fb157;
+    color: #fff;
+    width: 90%;
+     padding: 1rem;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .fa-long-arrow-alt-left {
+  display: none;
+  }
+  .nav-toggleShow {
+    display: block;
+  }
+.footer {
+  display:block;
+  width: 100%;
+}
