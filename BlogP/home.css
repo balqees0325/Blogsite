@@ -204,7 +204,7 @@ header button, .footer-form button {
   color: #555;
   font-size: 14px;
 }
-.card-text p a {
+.card-text p a, .cardframe p a {
   color: #1fb157;
   padding-left: 4px;
 }
