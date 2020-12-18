@@ -10,9 +10,10 @@
       crossorigin="anonymous"
     />
     <link
-      href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap"
+      href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300|Cinzel+Decorative:700"
       rel="stylesheet"
     />
+    <script src="script.js" defer></script>
     <link rel="stylesheet" href="home.css" />
     <title>Home Page</title>
   </head>
@@ -21,65 +22,67 @@
       <!-- Aside blogger info and nav -->
       <aside>
         <div class="nav">
+          <div class="menu-toggle"><i class="fas fa-bars"></i></div>
           <h1><a href="index.html">Arik's Blog</a></h1>
-          <nav>
-            <div class="menu-toggle"><i class="fas fa-bars"></i></div>
-            <img src="./images/profile.png" alt="profile-picture" />
-            <p>
-              Mr Arikewuyo Abdulrafi'i is an educator,a writer, a career guide
-              and leadership mentor.
-              <a href="About.html">Find out more about me.</a>
-            </p>
-            <ul class="social">
-              <li>
-                <a href="http://twitter.com/@ArikewuyoA"
-                  ><i class="fab fa-twitter"></i
-                ></a>
-              </li>
-              <li>
-                <a href="http://www.linkedin.com/in/abdulrafiu-arikewuyo"
-                  ><i class="fab fa-linkedin-in"></i
-                ></a>
-              </li>
-              <li>
-                <a href="https://abdulrafiuarikewuyo.medium.com"
-                  ><i class="fab fa-medium"></i
-                ></a>
-              </li>
-              <li>
-                <a href="https://www.facebook.com/arikewuyo.abdrafii"
-                  ><i class="fab fa-facebook"></i
-                ></a>
-              </li>
-            </ul>
-            <hr />
+          <div class="menu">
+            <nav>
+              <img src="./images/profile.png" alt="profile-picture" />
+              <p>
+                Mr Arikewuyo Abdulrafi'i is an educator,a writer, a career guide
+                and leadership mentor.
+                <a href="About.html">Find out more about me.</a>
+              </p>
+              <ul class="social">
+                <li>
+                  <a href="http://twitter.com/@ArikewuyoA"
+                    ><i class="fab fa-twitter"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="http://www.linkedin.com/in/abdulrafiu-arikewuyo"
+                    ><i class="fab fa-linkedin-in"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="https://abdulrafiuarikewuyo.medium.com"
+                    ><i class="fab fa-medium"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="https://www.facebook.com/arikewuyo.abdrafii"
+                    ><i class="fab fa-facebook"></i
+                  ></a>
+                </li>
+              </ul>
+              <hr />
 
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" href="index.html"
-                  ><i class="fas fa-home fa-fw mr-2"></i>Blog Home</a
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html"
+                    ><i class="fas fa-home fa-fw mr-2"></i>Blog Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="blog.html"
+                    ><i class="fas fa-bookmark fa-fw mr-2"></i>Blog Page</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="About.html"
+                    ><i class="fas fa-user fa-fw mr-2"></i>About Me</a
+                  >
+                </li>
+              </ul>
+              <div class="my-2">
+                <a
+                  class="btn"
+                  href="https://abdulbnkewuyo.gmail.com"
+                  target="_blank"
+                  >Get in Touch</a
                 >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="blog.html"
-                  ><i class="fas fa-bookmark fa-fw mr-2"></i>Blog Page</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="About.html"
-                  ><i class="fas fa-user fa-fw mr-2"></i>About Me</a
-                >
-              </li>
-            </ul>
-            <div class="my-2">
-              <a
-                class="btn"
-                href="https://abdulbnkewuyo.gmail.com"
-                target="_blank"
-                >Get in Touch</a
-              >
-            </div>
-          </nav>
+              </div>
+            </nav>
+          </div>
         </div>
       </aside>
       <!-- main blog section header -->
@@ -113,7 +116,7 @@
             <div class="card">
               <img class="covid" src="./images/mask.jpg" alt="" />
               <div class="card-text">
-                <a href="#"
+                <a href="covid.html"
                   ><h3>
                     HOW TO HELP STUDENTS COPE WITH THE PANDEMIC
                     <small>……………. a call for empathy</small>
@@ -124,7 +127,7 @@
                   think, and we can only hope and pray that we get back to
                   normal soon. Although, the lock-down has been eased in most
                   countries and schools have resumed but the effect still
-                  lingers.<a href="">Read more &rarr;</a>
+                  lingers.<a href="covid.htlm">Read more &rarr;</a>
                 </p>
               </div>
             </div>
@@ -132,14 +135,17 @@
             <div class="card">
               <img class="student" src="./images/studentbehavior.png" alt="" />
               <div class="card-text">
-                <a href="#"><h3>HOW TO MANAGE STUDENT’S BEHAVIOUR</h3></a>
+                <a href="behaviour.html"
+                  ><h3>HOW TO MANAGE STUDENT’S BEHAVIOUR</h3></a
+                >
                 <p>
                   When I got my current job, on my first meeting with the
                   principal of the school, she gave me two golden rules. Rule
                   #1. Thy shall not spank; Rule #2. Thy shall not use abusive
                   words. It was surprising that these are the only two
                   instructions a new teacher will get. That orientation was
-                  short and precise. <a href="">Read more &rarr;</a>
+                  short and precise.
+                  <a href="behaviour.html">Read more &rarr;</a>
                 </p>
               </div>
             </div>
@@ -148,7 +154,7 @@
               <img class="freedom" src="./images/freedom.jpg" alt="" />
               <div class="card-text">
                 <h3>
-                  <a href="#">
+                  <a href="nice.html">
                     HAVE A NICE DAY
                     <small>……. a brief about the teacher’s day</small></a
                   >
@@ -158,7 +164,7 @@
                   off from school and so he did today. As I was alighting from
                   his car, I wanted to say ‘have a nice day’ and suddenly I
                   remembered we are teachers and I stopped. Do teachers really
-                  have a nice day?<a href="">Read more &rarr;</a>
+                  have a nice day?<a href="nice.html">Read more &rarr;</a>
                 </p>
               </div>
             </div>
@@ -166,13 +172,19 @@
             <div class="card">
               <img src="./images/thanks.jpg" alt="" />
               <div class="card-text">
-                <h3><a href="#">A SIMPLE TRICK TO MAKE TEACHERS HAPPY</a></h3>
+                <h3>
+                  <a href="thanks.html"
+                    >A SIMPLE TRICK TO MAKE TEACHERS HAPPY</a
+                  >
+                </h3>
                 <p>
                   As a teacher, when you are in the office or classroom, and you
                   get a call from the school administration that a parent needs
                   your attention, these calls usually require that you abandon
                   all you are doing to attend to the need of the parent. Often
-                  time there is a complaint.<a href="">Read more &rarr;</a>
+                  time there is a complaint.<a href="thanks.html"
+                    >Read more &rarr;</a
+                  >
                 </p>
               </div>
             </div>
@@ -181,7 +193,7 @@
               <img src="./images/data.jpg" alt="" />
               <div class="card-text">
                 <h3>
-                  <a href="#">
+                  <a href="21stcentury.html">
                     A STUDENT TAUGHT ME HOW TO TEACH LIKE A 21ST CENTURY
                     TEACHER.</a
                   >
@@ -190,7 +202,8 @@
                   A few days ago, I was teaching a girl mathematics,
                   specifically, optimization with linear programming. We needed
                   to draw a graph and get the vertices then use the vertices to
-                  get the maximum and minimum value from a function.<a href=""
+                  get the maximum and minimum value from a function.<a
+                    href="21stcentury.html"
                     >Read more &rarr;</a
                   >
                 </p>
@@ -200,25 +213,25 @@
             <div class="card">
               <img src="./images/boy. jpg" alt="" />
               <div class="card-text">
-                <h3><a href="#">THIS BOY WILL NOT JUST LEARN</a></h3>
+                <h3><a href="boy.html">THIS BOY WILL NOT JUST LEARN</a></h3>
                 <p>
                   Some hard truth about parenting that are only known to
                   teachers.Parenting is not a function of age or the number of
                   children that you have, it is much more than that. It is
                   dependent on skills that you’ve got through deliberate
                   learning and the knowledge you are able to acquire from your
-                  parenting experience.<a href="">Read more &rarr;</a>
+                  parenting experience.<a href="boy.html">Read more &rarr;</a>
                 </p>
               </div>
             </div>
 
             <nav class="blog-nav nav my-5">
               <span>
-                <a class="nav-link-next" href="#"
+                <a class="nav-link-next" href="index.html"
                   ><i class="arrow-prev fas fa-long-arrow-alt-left"></i
                   >Previous</a
                 >
-                <a class="nav-link-next" href="page.html"
+                <a class="nav-link-next" href="blog.html"
                   >Next<i class="arrow-next fas fa-long-arrow-alt-right"></i
                 ></a>
               </span>
