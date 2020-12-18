@@ -30,8 +30,7 @@ main {
 }
 /* styling for aside */
 aside {
-  
-  background-color: #1fb157;
+   background-color: #1fb157;
 }
 aside .nav {
   height: 100vh;
@@ -137,7 +136,7 @@ section, .article {
 }
 header,.footer-form {
   text-align: center;
-  background-color: rgb(236, 231, 231);
+  background-color: #ccc;
   padding: 1rem;
 }
 header h2, .footer-form h2 {
@@ -171,15 +170,20 @@ header input, .footer-form input {
 header button, .footer-form button {
   background-color: #1fb157;
   border: none;
-  color: #eee;
+  color: #fff;
   font-size: 1rem;
 }
-/* end of header sttyling */
-/* main content */
+
 .card img {
   width: 12rem;
+  object-fit: contain;
 }
-.card {
+.freedom{
+  height: 10rem;
+  width: 16rem;
+}
+
+.card{
   display: flex;
   margin: 1rem;
   padding: 1.5rem;
@@ -206,9 +210,6 @@ header button, .footer-form button {
 }
 .blog-nav {
   display: block;
-  /* margin: 1rem; */
-  /*margin-left: 0;
-  padding-left: 12px; */
   width: 100%;
   position: relative;
 }
@@ -220,12 +221,7 @@ header button, .footer-form button {
 .blog-nav a:first-child {
   display: none;
 }
- .fa-long-arrow-alt-right {
-   position: absolute;
-   top: 50px;
-   right:0px;
-   border: 1px solid red;
- }
+
 .blog-nav a {
   display: block;
   background: #1fb157;
@@ -235,23 +231,7 @@ header button, .footer-form button {
   font-size: 1.5rem;
   text-align: center;
 }
-.fa-long-arrow-alt-left {
-display: none;
-}
-/* .blog-nav {
-  margin: 3rem;
- max-width: 500px;
-  padding-left: 12px;
-  width: 100%;
-  position: relative;
-}
-.blog-nav a {
-  /* width: 40%; */
-  /* background: #1fb157;
-  color: #fff;
-  padding: 1rem 13rem;
-  font-size: 1.5rem;
-} */
+
 .blog-nav a:hover {
   background-color: #07913c;
 }
@@ -259,13 +239,14 @@ display: none;
   position: absolute;
   top: 10px;
   left: 20px;
+  display: none;
 }
 .fa-long-arrow-alt-right {
   position: absolute;
-  top: 10px;
-  right: 75px;
-} */
-.footer {
+  top: 25px;
+  right: 10px;
+} 
+footer {
   display:flex;
   text-align: center;
   width: 100%;
@@ -280,7 +261,77 @@ display: none;
 .footer a {
   color: #eee;
 }
+/* extra style for covid article */
+section img.covid19 {
+  
+  max-height: 400px;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+section img.image{
+  max-height: 400px;
+  height: 100%;
+  width: 100%;
+}
+ section p.warning {
+  color: rgb(250, 163, 1);
+  font-weight: 500;
+}
+section p.italics {
+  color:rgb(2, 2, 170);
+  text-align: center;
+  width: 300px;
+  margin: 0 auto;
+}
+section p.danger {
+  color:red;
+  text-align: center;
+  width: 300px;
+  margin: 0 auto;
+}
+.border-left {
+  border-left : 4px solid red;
+  color: crimson;
+  padding-left: 10px;
 
+}
+section p {
+  padding: 20px 0;
+  letter-spacing: 2;
+}
+.center-text {
+  text-align: center;
+}
+p.center-text {
+  color: rgb(16, 87, 2);
+  font-weight: 400;
+}
+p.text-center {
+  color: rgb(5, 230, 118);
+  font-weight: 500;
+
+}
+section .gift {
+  font-size: 2.2rem;
+  color:rgb(18, 94, 3);
+  border-left: 4px solid green;
+  padding-left: 10px;
+}
+section .why>strong {
+  color: crimson;
+}
+section h2.upper{
+  text-transform: uppercase;
+}
+section .cardframe {
+margin: 0 3rem 4rem 10rem;
+}
+section .cardframe>iframe {
+  width: 100%;
+  height: 415px;
+}
+/* end of extra style for covid */
 @media (max-width: 780px), (max-width: 420px) {
   main {
     display: block;
@@ -306,7 +357,7 @@ display: none;
     font-size: 1.5rem;
     margin: 2.5em 0  0 0;
   }
-  header{
+  header, .footer-form{
     display: block; 
   }
   header div.intro {
@@ -315,14 +366,15 @@ display: none;
   .form-group input {
     width: 90%; 
   }
-  .email-sub .email {
+  /* .email-sub .email {
     width: 90%;
-    margin-bottom: 1em;
-  }
+    margin-bottom: 1rem;
+  } */
   .form-group button {
     width: 90%;
     margin-top: .8rem;
   }
+  
   .main{
     display: block;
     width: 100%;
@@ -333,6 +385,14 @@ display: none;
   }
   .card img {
     display: none;
+  }
+  section div.cardframe {
+    margin-left: -1rem;
+    border: 2px solid red;
+  }
+  section .cardframe>iframe {
+    display: none;
+    
   }
   .blog-nav {
     display: block;
